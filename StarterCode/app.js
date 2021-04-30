@@ -113,14 +113,14 @@ d3.csv("data.csv").then(function(statesData)
 
   // Add text into the circle
   chartGroup.selectAll("null")
-    .data(stateData)
+    .data(statesData)
     .enter()
     .append("text")
     .text(d => d.abbr)
     .attr("x", d => xLinearScale(d.poverty))
     .attr("y", d => yLinearScale(d.healthcare))
     .attr("text-anchor", "middle")
-    .attr("font-size", "10px")
+    .attr("font-size", "12px")
     .attr("fill", "black");
     
   // Create axes labels
