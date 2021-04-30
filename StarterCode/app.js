@@ -88,8 +88,8 @@ d3.csv("data.csv").then(function(statesData)
     .attr("fill", "lightblue")
     .attr("opacity", ".5");
 
-    // // Step 6: Initialize tool tip
-    // // ==============================
+    //  Step 6: Initialize tool tip
+    //  ==============================
       var toolTip = d3.tip()
         .attr("class", "tooltip")
         .offset([80, -60])
@@ -97,8 +97,8 @@ d3.csv("data.csv").then(function(statesData)
           return (`${statesData}<br>Healthcare: ${d.healthcare}<br>Poverty: ${d.poverty}`);
         });
 
-    // // Step 7: Create tooltip in the chart
-    // // ==============================
+    // Step 7: Create tooltip in the chart
+    //  ==============================
      chartGroup.call(toolTip);
 
      // Step 8: Create event listeners to display and hide the tooltip
